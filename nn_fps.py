@@ -257,7 +257,7 @@ for epoch in range(args.epochs):
 print(f"The training takes {time.time() - train_start_time:.4f}s.")
 
 # save the model
-model_path = ("./nn_fps_files/nn_fps_models/" +
+model_path = ("./nn_fps_models/" +
     f"EmbeddingFFN_seed_{args.seed}_{time.strftime("%y%m%d%H%M")}.pt")
 torch.save(model, model_path)
 
